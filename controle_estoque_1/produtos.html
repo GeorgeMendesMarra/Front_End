@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Produtos</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+<h1>Cadastro de Produtos</h1>
+</header>
+
+<main>
+
+<form id="formProduto">
+
+<input type="text" placeholder="Descrição do produto" required>
+
+<input type="number" placeholder="Peso">
+
+<input type="number" placeholder="Quantidade mínima">
+
+<select>
+<option>Categoria</option>
+</select>
+
+<select>
+<option>Fornecedor</option>
+</select>
+
+<button type="submit">
+Salvar Produto
+</button>
+
+</form>
+
+<table>
+
+<thead>
+
+<tr>
+<th>ID</th>
+<th>Produto</th>
+<th>Quantidade</th>
+<th>Ações</th>
+</tr>
+
+</thead>
+
+<tbody id="tabelaProdutos">
+
+</tbody>
+
+</table>
+
+</main>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
