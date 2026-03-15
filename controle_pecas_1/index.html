@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Controle de Peças</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Controle de Estoque de Peças</h1>
+
+<input type="text" id="buscar" placeholder="Buscar peça...">
+
+<form id="formPeca">
+
+<input type="text" id="nome" placeholder="Nome da peça" required>
+<input type="text" id="codigo" placeholder="Código" required>
+<input type="number" id="quantidade" placeholder="Quantidade" required>
+<input type="number" id="preco" placeholder="Preço" step="0.01" required>
+
+<button type="submit">Cadastrar</button>
+
+</form>
+
+<table>
+
+<thead>
+
+<tr>
+<th>Nome</th>
+<th>Código</th>
+<th>Quantidade</th>
+<th>Preço</th>
+<th>Ações</th>
+</tr>
+
+</thead>
+
+<tbody id="tabelaPecas"></tbody>
+
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
