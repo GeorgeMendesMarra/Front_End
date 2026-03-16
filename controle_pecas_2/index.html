@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<title>ERP Controle de Estoque</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="layout">
+
+<aside class="menu">
+
+<h2>ERP Estoque</h2>
+
+<ul>
+
+<li onclick="pagina('dashboard')">Dashboard</li>
+<li onclick="pagina('pecas')">Peças</li>
+<li onclick="pagina('mov')">Movimentação</li>
+<li onclick="pagina('usuarios')">Usuários</li>
+
+</ul>
+
+</aside>
+
+<main class="conteudo">
+
+<section id="dashboard" class="tela">
+
+<h1>Dashboard</h1>
+
+<canvas id="grafico"></canvas>
+
+</section>
+
+<section id="pecas" class="tela">
+
+<h1>Cadastro de Peças</h1>
+
+<form id="formPeca">
+
+<input id="nome" placeholder="Nome da peça" required>
+<input id="codigo" placeholder="Código" required>
+<input id="quantidade" type="number" placeholder="Quantidade">
+
+<button>Cadastrar</button>
+
+</form>
+
+<table>
+
+<thead>
+<tr>
+<th>Nome</th>
+<th>Código</th>
+<th>Quantidade</th>
+</tr>
+</thead>
+
+<tbody id="listaPecas"></tbody>
+
+</table>
+
+</section>
+
+<section id="mov" class="tela">
+
+<h1>Entrada / Saída</h1>
+
+<form id="formMov">
+
+<select id="pecaSelect"></select>
+
+<select id="tipo">
+
+<option value="entrada">Entrada</option>
+<option value="saida">Saída</option>
+
+</select>
+
+<input id="qtdMov" type="number" placeholder="Quantidade">
+
+<button>Registrar</button>
+
+</form>
+
+</section>
+
+<section id="usuarios" class="tela">
+
+<h1>Usuários</h1>
+
+<form id="formUser">
+
+<input id="nomeUser" placeholder="Nome">
+<input id="loginUser" placeholder="Login">
+
+<button>Cadastrar</button>
+
+</form>
+
+<table>
+
+<thead>
+<tr>
+<th>Nome</th>
+<th>Login</th>
+</tr>
+</thead>
+
+<tbody id="listaUsers"></tbody>
+
+</table>
+
+</section>
+
+</main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
